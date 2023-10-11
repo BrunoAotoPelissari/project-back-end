@@ -1,0 +1,9 @@
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: "mydatabase"
+      MYSQL_ROOT_PASSWORD: "my-secret-pw"
+      MYSQL_USER: "admin"
+    ports:
+      ["3306:3306"] 
